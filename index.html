@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parking System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #09203F, #537895); /* Adjust colors and direction as needed */
+            color: white; /* Text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4 text-center">Welcome to Car Parking System</h1>
+        <form action="/park" method="post" class="mb-4">
+            <div class="form-group">
+                <label for="car_number">Enter Car Number:</label>
+                <input type="text" class="form-control" id="car_number" name="car_number" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Park Car</button>
+        </form>
+        <a href="/parking-status" class="btn btn-secondary">View Parking Status</a>
+    </div>
+</body>
+</html>
